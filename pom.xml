@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.youneng.tmall</groupId>
+    <artifactId>tmall-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>tmall-core</module>
+        <module>tmall-eureka-server</module>
+        <module>config-center</module>
+    </modules>
+    <packaging>pom</packaging>
+    <name>tmall-parent</name>
+    <description>parent of seal program</description>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.5.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+<!--    <modules>-->
+<!--        <module>tamll-core</module>-->
+<!--        <module>eureka-server</module>-->
+<!--    </modules>-->
+    <!-- 模块说明：这里声明多个子模块 -->
+<!--    <modules>-->
+<!--        <module>seal-admin</module>-->
+<!--        <module>seal-eureka</module>-->
+<!--        <module>seal-api</module>-->
+<!--        <module>seal-account</module>-->
+<!--        &lt;!&ndash;        <module>seal-parser</module>&ndash;&gt;-->
+<!--        <module>seal-backend</module>-->
+<!--        <module>seal-frontend</module>-->
+<!--        <module>seal-core</module>-->
+<!--        <module>seal-config</module>-->
+<!--        <module>seal-index</module>-->
+<!--        &lt;!&ndash;<module>seal-index-super</module>&ndash;&gt;-->
+<!--        <module>seal-search</module>-->
+<!--        <module>seal-manager</module>-->
+<!--        <module>seal-zuul</module>-->
+<!--        <module>seal-exam</module>-->
+<!--        <module>seal-common</module>-->
+<!--        <module>seal-lesson</module>-->
+<!--        <module>seal-push</module>-->
+<!--        <module>seal-item-service</module>-->
+<!--        <module>seal-product</module>-->
+<!--        <module>seal-download</module>-->
+<!--        <module>seal_statistics</module>-->
+<!--        <module>seal-president</module>-->
+<!--        <module>seal-validate</module>-->
+<!--        <module>seal-com</module>-->
+<!--        <module>seal-basedata</module>-->
+<!--        <module>seal-integral</module>-->
+<!--        <module>seal-public</module>-->
+<!--        <module>seal-homework-manager</module>-->
+<!--        <module>seal-word-manager</module>-->
+<!--        <module>seal-item-manager</module>-->
+<!--        <module>seal-frontend-web</module>-->
+<!--        <module>seal-word</module>-->
+<!--        <module>seal-time-task</module>-->
+<!--    </modules>-->
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Finchley.SR1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.youneng.seal</groupId>-->
+<!--                <artifactId>seal-common</artifactId>-->
+<!--                <version>0.0.1-SNAPSHOT</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>com.youneng.seal</groupId>-->
+<!--                <artifactId>seal-core</artifactId>-->
+<!--                <version>0.0.1-SNAPSHOT</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>com.youneng.seal</groupId>-->
+<!--                <artifactId>seal-api</artifactId>-->
+<!--                <version>0.0.1-SNAPSHOT</version>-->
+<!--            </dependency>-->
+
+            <!-- nacos配置中心使用 -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+                <version>2.0.1.RELEASE</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>nexus-releases</id>-->
+<!--            <name>Releases</name>-->
+<!--            <url>http://172.26.130.15:9081/repository/maven-releases/</url>-->
+<!--        </repository>-->
+<!--        <snapshotRepository>-->
+<!--            <id>nexus-snapshots</id>-->
+<!--            <name>Snapshot</name>-->
+<!--            <url>http://172.26.130.15:9081/repository/maven-snapshots/</url>-->
+<!--        </snapshotRepository>-->
+<!--    </distributionManagement>-->
+
+
+</project>

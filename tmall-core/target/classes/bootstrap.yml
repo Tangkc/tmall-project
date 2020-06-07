@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: tmall-core
+  cloud:
+    config:
+      profile: springtest
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        namespace: a413dcc1-fc07-4033-8b88-e8d9784c55b9
+        group: ${spring.cloud.config.profile}
+server:
+  port: 9026
+
+
+
+
+
+

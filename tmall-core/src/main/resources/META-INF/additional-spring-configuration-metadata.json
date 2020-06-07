@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "datasource.username",
+      "type": "java.lang.String",
+      "description": "Description for datasource.username."
+    },
+    {
+      "name": "spring.cloud.config.profile",
+      "type": "java.lang.String",
+      "description": "Description for spring.cloud.config.profile."
+    }
+  ] }
