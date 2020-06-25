@@ -1,0 +1,10 @@
+/Users/tangkc/IdeaProjects/Tmall-project/tmall-auth/src/main/java/com/tamll/auth/register/mapper/dto/UserInfoDto.java
+/Users/tangkc/IdeaProjects/Tmall-project/tmall-auth/src/main/java/com/tamll/auth/register/mapper/RegisterMapper.java
+/Users/tangkc/IdeaProjects/Tmall-project/tmall-auth/src/main/java/com/tamll/auth/register/feign/UserFeign.java
+/Users/tangkc/IdeaProjects/Tmall-project/tmall-auth/src/main/java/com/tamll/auth/register/commen/CommonResult.java
+/Users/tangkc/IdeaProjects/Tmall-project/tmall-auth/src/main/java/com/tamll/auth/TmallAuthApplication.java
+/Users/tangkc/IdeaProjects/Tmall-project/tmall-auth/src/main/java/com/tamll/auth/register/service/serviceImpl/RegistServiceImpl.java
+/Users/tangkc/IdeaProjects/Tmall-project/tmall-auth/src/main/java/com/tamll/auth/register/controller/RegistController.java
+/Users/tangkc/IdeaProjects/Tmall-project/tmall-auth/src/main/java/com/tamll/auth/register/config/AuthSwaggerConfig.java
+/Users/tangkc/IdeaProjects/Tmall-project/tmall-auth/src/main/java/com/tamll/auth/register/service/RegistService.java
+/Users/tangkc/IdeaProjects/Tmall-project/tmall-auth/src/main/java/com/tamll/auth/register/controller/vo/UserInfoVo.java

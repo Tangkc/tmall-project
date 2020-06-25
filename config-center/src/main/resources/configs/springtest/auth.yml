@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: tmall-auth
+  cloud:
+    config:
+      profile: springtest
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        namespace: a413dcc1-fc07-4033-8b88-e8d9784c55b9
+        group: ${spring.cloud.config.profile}
+  datasource:
+    url: jdbc:mysql://localhost:3306/tmall?useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka/
+    registry-fetch-interval-seconds: 5
+  instance:
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+    prefer-ip-address: true
+
+server:
+  port: 9027
+mybatis:
+  configuration:
+    use-actual-param-name: true
+    use-generated-keys: true
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.tamll.auth.register.mapper.dto
+
+
+
+
+
+
