@@ -14,6 +14,7 @@ public class UserInfoDto {
     private Date creatTime;
     private int userAge;
     private String passWord;
+    private int userType;
 
 
 }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tmall.goods.mapper.StoreMapper">
+
+    <sql id="table">`store_info`</sql>
+
+
+    <insert id="saveStoreDto" useGeneratedKeys="true" keyProperty="storeDto.id" parameterType="com.tmall.goods.mapper.dto.StoreDto">
+        INSERT INTO <include refid="table"/> (`store_name`,`store_description`,`store_business_license`,`store_business_license_id`,`store_manager_name`,`store_manager_phone`,`store_manager_idcard`)
+        VALUES (#{storeDto.storeName},#{storeDto.storeDescription},#{storeDto.storeBusinessLicense},#{storeDto.storeBusinessLicenseId},
+        #{storeDto.storeManagerName},#{storeDto.storeManagerPhone},#{storeDto.storeManagerIdcard})
+    </insert>
+    
+    
+    <select id="countStoreInfo" resultType="Integer">
+        select count(1) from <include refid="table"/> where store_business_license_id = #{storeBusinessLicenseId}
+    </select>
+
+
+</mapper>

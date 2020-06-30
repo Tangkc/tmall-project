@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: tmall-goods
+  datasource:
+    url: jdbc:mysql://localhost:3306/tmall?useSSL=false&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 9029
+mybatis:
+  configuration:
+    use-actual-param-name: true
+    use-generated-keys: true
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.tamll.goods.mapper.dto
+  mapper-locations: classpath:mappers/*.xml
+
+
+
+
+
+
+

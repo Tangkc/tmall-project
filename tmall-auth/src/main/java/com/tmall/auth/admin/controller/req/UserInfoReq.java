@@ -23,4 +23,7 @@ public class UserInfoReq {
     @ApiModelProperty(value = "密码", required = true)
     @NotEmpty(message = "密码不能为空")
     private String passWord;
+    @ApiModelProperty(value = "用户类型 0:店长 1:普通用户", required = true)
+    @NotEmpty(message = "用户类型不能为null")
+    private String userType;
 }
